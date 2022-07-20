@@ -3,7 +3,10 @@ name: docs_pages_workflow
 # execute this workflow automatically when a we push to master
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+    paths:
+      - 'docsrc/**'
  
 jobs:
  
@@ -12,7 +15,9 @@ jobs:
     container: debian:buster-slim
  
     steps:
- 
+    - name: 'Checkout GitHub Action'
+      uses: actions/checkout@v2
+      
     - name: Prereqs
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
