@@ -110,19 +110,6 @@ man_pages = [
      [author], 1)
 ]
 
-
-# # -- Options for Texinfo output ----------------------------------------------
-
-# # Grouping the document tree into Texinfo files. List of tuples
-# # (source start file, target name, title, author,
-# #  dir menu entry, description, category)
-# texinfo_documents = [
-#     (master_doc, 'helloWorld', 'helloWorld Documentation',
-#      author, 'helloWorld', 'One line description of project.',
-#      'Miscellaneous'),
-# ]
-
-
 # -- Extension configuration -------------------------------------------------
  
 ############################
@@ -167,13 +154,6 @@ else:
 # the lower-left rtd menu and 'version' affects the logo-area version)
 html_context['current_version'] = current_version
 html_context['version'] = current_version
- 
-# # POPULATE LINKS TO OTHER LANGUAGES
-# html_context['languages'] = [ ('en', '/' +REPO_NAME+ '/en/' +current_version+ '/') ]
- 
-# languages = [lang.name for lang in os.scandir('locales') if lang.is_dir()]
-# for lang in languages:
-#    html_context['languages'].append( (lang, '/' +REPO_NAME+ '/' +lang+ '/' +current_version+ '/') )
  
 # POPULATE LINKS TO OTHER VERSIONS
 html_context['versions'] = list()
