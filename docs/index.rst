@@ -7,12 +7,12 @@ Welcome to helloWorld's documentation!
 ======================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
 
    autodoc
    autodoc_scraper
-
+   autodoc_bing
 
 Indices and tables
 ==================
