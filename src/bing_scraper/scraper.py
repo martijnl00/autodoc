@@ -1,5 +1,6 @@
-import os
+"""Scraper functionality for districts from bing.com"""
 
+import os
 import logging
 
 

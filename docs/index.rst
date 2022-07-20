@@ -3,15 +3,13 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to helloWorld's documentation!
+Welcome to DCP's documentation of data_fetch!
 ======================================
 
 .. toctree::
    :maxdepth: 3
    :caption: Contents:
 
-   autodoc
-   autodoc_scraper
    modules
 
 Indices and tables
