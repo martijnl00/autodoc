@@ -3,7 +3,7 @@
 helloWorld.py
 =============
  
-.. automodule:: helloWorld, scraper
+.. automodule:: helloWorld
   :members:
   :undoc-members:
  
