@@ -1,7 +1,7 @@
 import os
 import requests
 import logging
-from dcp_common.data_flow import insert, get_data_from_db
+from dcp_.data_flow import insert, get_data_from_db
 
 VERSION = "0.0.1"
 
