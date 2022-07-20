@@ -12,7 +12,7 @@ Welcome to helloWorld's documentation!
 
    autodoc
    autodoc_scraper
-   autodoc_bing
+   modules
 
 Indices and tables
 ==================

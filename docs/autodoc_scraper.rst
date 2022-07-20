@@ -1,4 +1,4 @@
-.. _autodoc:
+.. _autodoc_scraper:
  
 scraper.py
 =============
