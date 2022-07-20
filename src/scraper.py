@@ -1,7 +1,6 @@
 import os
-import requests
+
 import logging
-from dcp_.data_flow import insert, get_data_from_db
 
 VERSION = "0.0.1"
 
@@ -39,10 +38,10 @@ def get_district(monitor_id, lat, lon):
     bing_maps_key =  os.environ.get('bing_maps_key')
     search_url = f'http://dev.virtualearth.net/REST/v1/Locations/{lat},{lon}?o=JSON&key={bing_maps_key}'
     headers = {"Ocp-Apim-Subscription-Key": bing_maps_key}
-    response = requests.get(search_url, headers=headers).json()
+    # response = requests.get(search_url, headers=headers).json()
   
-    filtered_data = filter_data(response)
-    district_data = {'monitor_id': monitor_id, 'district': filtered_data}
+    # filtered_data = filter_data(response)
+    district_data = 1
 
     return district_data
 
@@ -54,7 +53,7 @@ def scrape_and_insert():
         SELECT monitor_id, site_name, TRUNC(lat,4), TRUNC(lon,4) FROM combined.installation
         WHERE lat NOTNULL AND lon NOTNULL;"""
 
-    installations = get_data_from_db(sql)
+    installations = []
 
     district_all_sites = []
     for installation in installations:
@@ -69,7 +68,7 @@ def scrape_and_insert():
             logging.info(f"[FAIL] GET DISTRICT FOR {installation[1]}")
 
     try:
-        insert(district_all_sites, "combined.districts", "(%s,%s)", "(monitor_id) DO UPDATE SET district = excluded.district;")
+        # insert(district_all_sites, "combined.districts", "(%s,%s)", "(monitor_id) DO UPDATE SET district = excluded.district;")
         logging.info("[SUCCESS] insert districts")
 
     except:
