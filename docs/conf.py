@@ -243,22 +243,22 @@ for version in versions:
  
 # POPULATE LINKS TO OTHER FORMATS/DOWNLOADS
  
-# settings for creating PDF with rinoh
-rinoh_documents = [(
- master_doc,
- 'target',
- project+ ' Documentation',
- '© ' +copyright,
-)]
-today_fmt = "%B %d, %Y"
+# # settings for creating PDF with rinoh
+# rinoh_documents = [(
+#  master_doc,
+#  'target',
+#  project+ ' Documentation',
+#  '© ' +copyright,
+# )]
+# today_fmt = "%B %d, %Y"
  
-# settings for EPUB
-epub_basename = 'target'
+# # settings for EPUB
+# epub_basename = 'target'
  
-html_context['downloads'] = list()
-html_context['downloads'].append( ('pdf', '/' +REPO_NAME+ '/' +current_language+ '/' +current_version+ '/' +project+ '-docs_' +current_language+ '_' +current_version+ '.pdf') )
+# html_context['downloads'] = list()
+# html_context['downloads'].append( ('pdf', '/' +REPO_NAME+ '/' +current_language+ '/' +current_version+ '/' +project+ '-docs_' +current_language+ '_' +current_version+ '.pdf') )
  
-html_context['downloads'].append( ('epub', '/' +REPO_NAME+ '/' +current_language+ '/' +current_version+ '/' +project+ '-docs_' +current_language+ '_' +current_version+ '.epub') )
+# html_context['downloads'].append( ('epub', '/' +REPO_NAME+ '/' +current_language+ '/' +current_version+ '/' +project+ '-docs_' +current_language+ '_' +current_version+ '.epub') )
  
 ##########################
 # "EDIT ON GITHUB" LINKS #
