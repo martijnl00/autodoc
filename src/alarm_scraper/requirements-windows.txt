@@ -1,0 +1,8 @@
+# Do not include azure-functions-worker as it may conflict with the Azure Functions platform
+
+azure-functions
+psycopg2
+requests
+
+#git+https://${{secrets.GIT_ACCESS_TOKEN}}@github.com/DifferCommunityPower/DCP-python@0.2.1
+
