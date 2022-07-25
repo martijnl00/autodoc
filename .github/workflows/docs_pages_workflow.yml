@@ -19,7 +19,7 @@ jobs:
         apt-get update
         apt-get install -y git
         apt-get install -y python3-pip
-        pip 3 install requests
+        pip3 install requests
 
         git clone --depth 1 "https://token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" .
       shell: bash
