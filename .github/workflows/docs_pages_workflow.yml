@@ -17,9 +17,8 @@ jobs:
       with:
         repository: martijnl00/some_functions
         path: ./dependencies
-        submodules: recursive
         token: ${{ secrets.GIT_ACCESS_TOKEN }}
-        
+
     - name: Prereqs
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
