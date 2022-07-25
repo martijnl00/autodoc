@@ -12,13 +12,6 @@ jobs:
     container: debian:buster-slim
  
     steps:
-    - name: Check out my other private repo
-      uses: actions/checkout@main
-      with:
-        repository: martijnl00/some_functions
-        path: ./dependencies
-        token: ${{ secrets.GIT_ACCESS_TOKEN }}
-
     - name: Prereqs
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -28,6 +21,13 @@ jobs:
         git clone --depth 1 "https://token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" .
       shell: bash
 
+    - name: Check out my other private repo
+      uses: actions/checkout@main
+      with:
+        repository: martijnl00/some_functions
+        path: ./dependencies
+        token: ${{ secrets.GIT_ACCESS_TOKEN }}
+        
     - name: Execute script to build our documentation and update pages
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
