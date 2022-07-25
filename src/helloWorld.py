@@ -1,3 +1,5 @@
+from some_functions.email import send_email
+
 """This is a very simple helloWorld python script"""
 def helloWorld( msg ):
     """
