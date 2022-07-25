@@ -19,8 +19,7 @@ jobs:
         apt-get update
         apt-get install -y git
         git clone --depth 1 "https://token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" .
-        git remote set-url origin https://martijnl00@github.com/martijnl00/some_functions.git
-        git clone --depth 1 "https://token:${GITHUB_TOKEN}@github.com/martijnl00/some_functions.git" ./dependencies
+        git submodule add https://github.com/martijnl00/some_functions.git
 
       shell: bash
  
