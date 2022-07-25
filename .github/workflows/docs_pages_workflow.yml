@@ -10,16 +10,16 @@ jobs:
   build_docs_job:
     runs-on: ubuntu-latest
     container: debian:buster-slim
-
+ 
     steps:
-     - name: Check out my other private repo
+    - name: Check out my other private repo
       uses: actions/checkout@main
       with:
         repository: martijnl00/some_functions
         path: ./dependencies
         submodules: recursive
         token: ${{ secrets.GIT_ACCESS_TOKEN }}
- 
+        
     - name: Prereqs
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
