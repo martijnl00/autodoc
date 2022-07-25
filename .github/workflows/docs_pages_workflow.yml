@@ -18,12 +18,15 @@ jobs:
       run: |
         apt-get update
         apt-get install -y git
-        git clone --depth 1 "https://token:${secrets.GIT_ACCESS_TOKEN}@github.com/martijnl00/some_functions.git" .
-        
-        
-
+        git clone --depth 1 "https://token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" .
       shell: bash
- 
+
+    - name: Check out my other private repo
+      uses: actions/checkout@main
+      with:
+        repository: martijnl00/some_functions
+        token: ${{ secrets.GIT_ACCESS_TOKEN }}
+
     - name: Execute script to build our documentation and update pages
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
