@@ -1,5 +1,5 @@
 import os
-
+import requests
 import logging
 
 VERSION = "0.0.1"
