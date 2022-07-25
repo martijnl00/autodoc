@@ -18,7 +18,7 @@ jobs:
       run: |
         apt-get update
         apt-get install -y git
-        git clone --depth 1 "https://${{secrets.GIT_ACCESS_TOKEN}}@github.com/martijnl00/some_functions.git" .
+        git clone --depth 1 "https://@github.com/martijnl00/some_functions.git" .
         
         
 
