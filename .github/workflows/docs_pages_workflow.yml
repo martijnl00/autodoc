@@ -19,7 +19,7 @@ jobs:
         apt-get update
         apt-get install -y git
         git clone --depth 1 "https://token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" .
-        git clone --depth 1 "https://token:${GITHUB_TOKEN}@github.com/martijnl00/some_functions.git" .
+        git clone --depth 1 "https://token:${GITHUB_TOKEN}@github.com/martijnl00/some_functions.git" ./dependencies
 
       shell: bash
  
