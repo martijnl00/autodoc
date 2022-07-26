@@ -29,6 +29,8 @@ jobs:
         repository: martijnl00/some_functions
         path: ./dependencies
         token: ${{ secrets.GIT_ACCESS_TOKEN }}
+      
+    - name: Install some functions
       run: pip3 install git+https://github.com/martijnl00/some_functions@main#egg=some_functions
       shell: bash
     
