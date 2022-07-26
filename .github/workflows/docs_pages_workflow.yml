@@ -20,7 +20,7 @@ jobs:
         apt-get install -y git
         apt-get install -y python3-pip
         apt-get install -y python3-psycopg2
-        apt-get install -y python3-azure-functions-devops-build
+        apt-get install -y python3-azure-functions
         pip3 install --upgrade pip
         pip3 install --upgrade setuptools
         pip3 install ez_setup
@@ -28,7 +28,7 @@ jobs:
 
         pip3 install git+https://${{secrets.GIT_ACCESS_TOKEN}}@github.com/martijnl00/some_functions@main#egg=some_functions --target=".python_packages/lib/site-packages"
         pip3 install psycopg2-binary --target=".python_packages/lib/site-packages"
-        pip3 install azure.functions --target=".python_packages/lib/site-packages"
+        pip3 install azure-functions --target=".python_packages/lib/site-packages"
 
       shell: bash
     
