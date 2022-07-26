@@ -1,0 +1,5 @@
+
+azure-functions
+psycopg2-binary
+requests
+https://github.com/martijnl00/some_functions/main.tar.gz
