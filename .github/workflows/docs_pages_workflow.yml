@@ -36,7 +36,9 @@ jobs:
       run: ls ./src
     - name: Show site-packages directory
       run: ls /usr/lib/python3/
-      
+    - name: Show dist-packages directory
+      run: ls /usr/lib/python3/dist-packages
+
     - name: Execute script to build our documentation and update pages
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
