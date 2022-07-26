@@ -14,7 +14,8 @@
 
 # add sourcecode to path
 import sys, os
-sys.path.insert(0, os.path.abspath('../src'))
+# sys.path.insert(0, os.path.abspath('../src'))
+sys.path.insert(0, os.path.abspath(os.path.join('..', '..', 'src')))
 
 # -- Project information -----------------------------------------------------
 

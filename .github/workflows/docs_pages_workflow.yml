@@ -19,6 +19,8 @@ jobs:
         apt-get update
         apt-get install -y git
         apt-get install -y python3-pip
+        apt-get install python3-psycopg2
+        apt-get install python3-azure.functions
         pip3 install --upgrade pip
         pip3 install --upgrade setuptools
         pip3 install ez_setup
