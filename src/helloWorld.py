@@ -1,4 +1,4 @@
-from some_functions.email import send_email
+from some_functions.my_funcs import send_mail_v2
 
 """This is a very simple helloWorld python script"""
 def helloWorld( msg ):
