@@ -1,6 +1,5 @@
 import os
 import requests
-import charset_normalizer
 import logging
 
 VERSION = "0.0.1"

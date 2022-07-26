@@ -1,7 +1,7 @@
+import psycopg2
 import urllib3
 import idna
 import requests
-import psycopg2
 
 from src import send_mail_v2
 
