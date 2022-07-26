@@ -33,7 +33,7 @@ jobs:
     - name: Install some functions
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: pip3 install git+https://token:${GITHUB_TOKEN}@github.com/martijnl00/some_functions@main#egg=some_functions
+      run: pip3 install git+git://token:${GITHUB_TOKEN}@github.com/martijnl00/some_functions@main#egg=some_functions
       shell: bash
     
     - name: Show Working directory
