@@ -34,8 +34,6 @@ jobs:
       run: ls ./src
     - name: Show site-packages directory
       run: ls .python_packages/lib/site-packages
-    - name: Show dependencies directory
-      run: ls ./dependencies
 
     - name: Execute script to build our documentation and update pages
       env:
