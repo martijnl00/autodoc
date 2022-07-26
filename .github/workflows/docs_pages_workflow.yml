@@ -20,7 +20,7 @@ jobs:
         apt-get install -y git
         apt-get install -y python3-pip
         pip3 install --upgrade setuptools
-        pip3 install git+https://${{secrets.GIT_ACCESS_TOKEN}}@github.com/martijnl00/some_functions@0.1.1#egg=some_functions
+        pip3 install git+https://${{secrets.GIT_ACCESS_TOKEN}}@github.com/martijnl00/some_functions@main#egg=some_functions
 
         git clone --depth 1 "https://token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" .
       shell: bash
