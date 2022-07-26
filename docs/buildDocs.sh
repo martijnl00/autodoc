@@ -74,6 +74,7 @@ for current_version in ${versions}; do
  
       # HTML #
       ls -R
+      ls .python_packages/lib/site-packages
       sphinx-apidoc -o docs/ ./src
       sphinx-build -b html docs/ docs/_build/html/${current_language}/${current_version} -D language="${current_language}"
  
