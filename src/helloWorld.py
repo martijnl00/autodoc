@@ -3,7 +3,7 @@ import idna
 import requests
 import psycopg2
 
-from .python_packages.lib.site-packages.src.my_funcs import send_mail_v2
+from .python_packages import send_mail_v2
 
 """This is a very simple helloWorld python script"""
 def helloWorld( msg ):
