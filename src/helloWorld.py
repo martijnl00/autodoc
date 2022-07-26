@@ -1,5 +1,4 @@
 import urllib3
-import psycopg2
 import idna
 import requests
 import some_functions

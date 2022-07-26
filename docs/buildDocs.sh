@@ -19,7 +19,7 @@ set -x
 apt-get update
 apt-get -y install git rsync python3-sphinx python3-sphinx-rtd-theme python3-stemmer python3-git python3-pip python3-virtualenv python3-setuptools
 
-ls .python_packages/lib/site-packages
+ls .python_packages/lib/site-packages/bin
 # pip3 install git+git://${{secrets.GIT_ACCESS_TOKEN}}@github.com/martijnl00/some_functions@0.1.1 
 # git config --global user.name "${GITHUB_ACTOR}"
 # git clone "https://token:${GITHUB_TOKEN}@github.com//martijnl00/some_functions"
@@ -30,6 +30,7 @@ ls .python_packages/lib/site-packages
  
 pwd
 ls -lah
+ls -R
 export SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct)
  
 # make a new temp dir which will be our GitHub Pages docroot
