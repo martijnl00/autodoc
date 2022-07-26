@@ -19,7 +19,7 @@ set -x
 apt-get update
 apt-get -y install git rsync python3-sphinx python3-sphinx-rtd-theme python3-stemmer python3-git python3-pip python3-virtualenv python3-setuptools
 
-ls .python_packages/lib/site-packages/bin
+ls .python_packages/lib/site-packages
 # pip3 install git+git://${{secrets.GIT_ACCESS_TOKEN}}@github.com/martijnl00/some_functions@0.1.1 
 # git config --global user.name "${GITHUB_ACTOR}"
 # git clone "https://token:${GITHUB_TOKEN}@github.com//martijnl00/some_functions"
@@ -73,6 +73,7 @@ for current_version in ${versions}; do
       echo "INFO: Building for ${current_language}"
  
       # HTML #
+      ls -R
       sphinx-apidoc -o docs/ ./src
       sphinx-build -b html docs/ docs/_build/html/${current_language}/${current_version} -D language="${current_language}"
  

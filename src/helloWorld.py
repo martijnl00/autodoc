@@ -1,6 +1,7 @@
 import urllib3
 import idna
 import requests
+import psycopg2
 import some_functions
 # from some_functions.my_funcs import send_mail_v2
 
