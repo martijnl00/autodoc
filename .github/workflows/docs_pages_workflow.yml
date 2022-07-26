@@ -37,6 +37,8 @@ jobs:
     
     - name: Show Working directory
       run: ls 
+    - name: Show src directory
+      run: ls ./src
     - name: Show dependencies directory
       run: ls ./dependencies
 
