@@ -3,7 +3,7 @@ import urllib3
 import idna
 import requests
 
-from src import send_mail_v2
+from src.my_funcs import send_mail_v2
 
 """This is a very simple helloWorld python script"""
 def helloWorld( msg ):
