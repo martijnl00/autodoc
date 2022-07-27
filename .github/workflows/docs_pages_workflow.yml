@@ -27,6 +27,7 @@ jobs:
 
         pip3 install git+https://${{secrets.GIT_ACCESS_TOKEN}}@github.com/martijnl00/some_functions@main#egg=some_functions --target="/usr/lib/python3/dist-packages"
         pip3 install azure-functions --target="/usr/lib/python3/dist-packages"
+        pip3 install -r docs/requirements.txt --target="/usr/lib/python3/dist-packages"
 
       shell: bash
     
