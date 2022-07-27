@@ -1,0 +1,10 @@
+bing\_scraper.http package
+==========================
+
+Module contents
+---------------
+
+.. automodule:: bing_scraper.http
+    :members:
+    :undoc-members:
+    :show-inheritance:

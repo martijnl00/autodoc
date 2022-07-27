@@ -1,0 +1,10 @@
+bing\_scraper.version package
+=============================
+
+Module contents
+---------------
+
+.. automodule:: bing_scraper.version
+    :members:
+    :undoc-members:
+    :show-inheritance:

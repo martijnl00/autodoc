@@ -1,0 +1,10 @@
+bing\_scraper.timer package
+===========================
+
+Module contents
+---------------
+
+.. automodule:: bing_scraper.timer
+    :members:
+    :undoc-members:
+    :show-inheritance:

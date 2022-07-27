@@ -1,0 +1,31 @@
+bing\_scraper package
+=====================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    bing_scraper.http
+    bing_scraper.timer
+    bing_scraper.version
+
+Submodules
+----------
+
+bing\_scraper.scraper module
+----------------------------
+
+.. automodule:: bing_scraper.scraper
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: bing_scraper
+    :members:
+    :undoc-members:
+    :show-inheritance:
